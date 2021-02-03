@@ -5,6 +5,4 @@
 
 [Swift开发入门-基础知识(一),附demo](https://www.jianshu.com/p/3b01707fed18)
 
-[Xcode11新建低版本iOS，swift项目流程及问题](https://www.xugj520.cn/archives/xcode-swift.html)
-
-[code11 新建项目兼容低版本 SceneDelegate](https://www.jianshu.com/p/72a6e3bc6926)
+[Xcode11 新建项目兼容低版本 SceneDelegate](https://www.jianshu.com/p/72a6e3bc6926)
