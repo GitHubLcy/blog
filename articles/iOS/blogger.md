@@ -5,7 +5,7 @@
 
 [me](http://blog.csdn.net/SpringSunLcy)  
 
-[MJ1](http://blog.csdn.net/q199109106q) 
+[MJ1](http://blog.csdn.net/q199109106q) ，
 [MJ2](http://www.cnblogs.com/mjios)  
 
 [唐巧](http://blog.devtang.com/)
