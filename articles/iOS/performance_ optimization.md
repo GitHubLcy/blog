@@ -7,20 +7,20 @@
 [iOS性能优化-UI卡顿检测](https://blog.csdn.net/u010262501/article/details/79616963)  
 
 ## 启动优化
-[iOS启动时间优化](https://mp.weixin.qq.com/s/lRBdtwh7BmO6i3yDBRGTwA)
-[iOS启动优化](http://lingyuncxb.com/2018/01/30/iOS%E5%90%AF%E5%8A%A8%E4%BC%98%E5%8C%96/)
-[iOS面试题：App启动过慢，你可能想到的因素有哪些？](https://www.jianshu.com/p/998f06517eba)
-[优化 App 的启动时间实践 iOS](https://mp.weixin.qq.com/s?__biz=MjM5OTM0MzIwMQ==&mid=2652560354&idx=2&sn=ccaa3ecbfa1018f8a3738ac886c8673d&chksm=bcd29eec8ba517fad5bcc7b67b38246edd985e1196f5ad432ed7f42d8df1e6c7df8b608598d7&scene=21#wechat_redirect)
+[iOS启动时间优化](https://mp.weixin.qq.com/s/lRBdtwh7BmO6i3yDBRGTwA)  
+[iOS启动优化](http://lingyuncxb.com/2018/01/30/iOS%E5%90%AF%E5%8A%A8%E4%BC%98%E5%8C%96/)  
+[iOS面试题：App启动过慢，你可能想到的因素有哪些？](https://www.jianshu.com/p/998f06517eba)  
+[优化 App 的启动时间实践 iOS](https://mp.weixin.qq.com/s?__biz=MjM5OTM0MzIwMQ==&mid=2652560354&idx=2&sn=ccaa3ecbfa1018f8a3738ac886c8673d&chksm=bcd29eec8ba517fad5bcc7b67b38246edd985e1196f5ad432ed7f42d8df1e6c7df8b608598d7&scene=21#wechat_redirect)  
 
 ## 原理篇
-[iOS开发-视图渲染与性能优化](https://mp.weixin.qq.com/s/048AFZJYi-Tbf35NtGwRBg)
-[iOS性能优化——图片加载和处理](https://mp.weixin.qq.com/s/YLUA4htPI360sd5PQjsayQ)
-[iOS界面渲染流程分析](https://mp.weixin.qq.com/s/drWXwnLcEw656wt3kD4PUA)
+[iOS开发-视图渲染与性能优化](https://mp.weixin.qq.com/s/048AFZJYi-Tbf35NtGwRBg)  
+[iOS性能优化——图片加载和处理](https://mp.weixin.qq.com/s/YLUA4htPI360sd5PQjsayQ)  
+[iOS界面渲染流程分析](https://mp.weixin.qq.com/s/drWXwnLcEw656wt3kD4PUA)  
 
 ## 整体优化
-[iOS性能优化篇](https://mp.weixin.qq.com/s/Ri-5nk4igNnL4KBXEzi5yA)
-[iOS-性能优化深入探究](https://mp.weixin.qq.com/s/653JVbLJx3zIfBoxR9WXKw)
-[iOS 界面性能优化浅析](https://mp.weixin.qq.com/s/ZpwMCHIGPZviMyXiDWR_0g)
+[iOS性能优化篇](https://mp.weixin.qq.com/s/Ri-5nk4igNnL4KBXEzi5yA)  
+[iOS-性能优化深入探究](https://mp.weixin.qq.com/s/653JVbLJx3zIfBoxR9WXKw)  
+[iOS 界面性能优化浅析](https://mp.weixin.qq.com/s/ZpwMCHIGPZviMyXiDWR_0g)  
 
 ## 卡顿优化 -CPU
 * 尽量用轻量级的对象，比如用不到事件处理的地方，可以考虑使用CALayer取代UIView
