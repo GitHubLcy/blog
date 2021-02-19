@@ -7,7 +7,7 @@
 [me](http://blog.csdn.net/SpringSunLcy)  
 
 [MJ csdn](http://blog.csdn.net/q199109106q) ，
-[MJ cnblogs](http://www.cnblogs.com/mjios)  
+[MJ 博客园](http://www.cnblogs.com/mjios)  
 
 [唐巧](http://blog.devtang.com/)
 
