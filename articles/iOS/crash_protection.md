@@ -102,7 +102,7 @@
 *  @param error 错误信息
 */
 + (void)reportError:(NSError *)error;
-+ ```
+```
 
 ** 配合AvoidCrash使用 **
 
