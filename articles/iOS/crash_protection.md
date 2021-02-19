@@ -16,4 +16,42 @@
 
 ## 一、关于崩溃
 
-对于闪退的处理，这里有一个不错的三方：`AvoidCrash`，原文点[这里](https://www.jianshu.com/p/b7a7ae0c9243)
+崩溃的严重性不言而喻，对于崩溃的处理，这里有一个不错的三方：`AvoidCrash`，原文点[这里](https://www.jianshu.com/p/b7a7ae0c9243)。  
+
+### 使用方法
+
+在AppDelegate的didFinishLaunchingWithOptions方法中添加如下代码，让AvoidCrash生效
+
+```
+//这句代码会让AvoidCrash生效，若没有如下代码，则AvoidCrash就不起作用
+[AvoidCrash becomeEffective];
+
+   /*
+    *  [AvoidCrash becomeEffective]，是全局生效。若你只需要部分生效，你可以单个进行处理，比如:
+    *  [NSArray avoidCrashExchangeMethod];
+    *  [NSMutableArray avoidCrashExchangeMethod];
+    *  .................
+    */
+```
+
+若你想要获取崩溃日志的所有详细信息，只需添加通知的监听，监听的通知名为:AvoidCrashNotification
+
+```
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [AvoidCrash becomeEffective];
+    
+    //监听通知:AvoidCrashNotification, 获取AvoidCrash捕获的崩溃日志的详细信息
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(dealwithCrashMessage:) name:AvoidCrashNotification object:nil];
+    return YES;
+}
+
+- (void)dealwithCrashMessage:(NSNotification *)note {
+    //注意:所有的信息都在userInfo中
+    //你可以在这里收集相应的崩溃信息进行相应的处理(比如传到自己服务器)
+    NSLog(@"%@",note.userInfo);
+}
+```
+
+
+
