@@ -15,4 +15,8 @@
 
 [YYKIT](https://blog.ibireme.com/category/tec/)
 
+[刘坤](https://blog.cnbluebox.com/blog/2015/11/28/module-and-decoupling/)
+
+[雷纯锋](http://blog.leichunfeng.com/blog/archives/)
+
 [bestswifter](https://github.com/bestswifter/blog)
