@@ -16,4 +16,4 @@
 
 ## 一、关于崩溃
 
-对于闪退的处理，这里有一个不错的三方：~AvoidCrash~，原文点[这里](https://www.jianshu.com/p/b7a7ae0c9243)
+对于闪退的处理，这里有一个不错的三方：`AvoidCrash`，原文点[这里](https://www.jianshu.com/p/b7a7ae0c9243)
