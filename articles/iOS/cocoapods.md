@@ -12,10 +12,13 @@
 ## cocoapods 创建
 
 **创建 podfile**
+
+可执行文件同级目录执行：
 ```
 vi podfile
 ```
 
+podfile文件中：
 ```
 target '项目名称' do
 platform:ios , '8.0'
@@ -23,6 +26,7 @@ pod 'SDWebImage'
 end
 ```
 
+执行命令
 ```
 pod install
 ```
