@@ -27,6 +27,7 @@ end
 pod install
 ```
 
+国内用下面命令较快
 ```
 pod install --verbose --no-repo-update
 pod install --repo-update
@@ -50,8 +51,6 @@ pod install --repo-update
 * ruby -v：查看ruby版本号
 
 ### pod
-* pod install --verbose --no-repo-update
-* pod install --repo-update
 * pod --version：pod版本号
 
 ## 报错处理
