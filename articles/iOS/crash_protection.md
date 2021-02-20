@@ -27,6 +27,21 @@
     * 你若集成了第三方崩溃日志收集的SDK,比如你用了腾讯的Bugly,你可以上报自定义异常。
 * 或许你会问有JSPatch就可以下发补丁来修复bug,为什么要用AvoidCrash？我只能说，AvoidCrash可以有效防止部分常见崩溃，JSPatch可以快速修复bug.推荐将两者都集成到项目中去。
 
+### 防止崩溃的效果
+
+可导致崩溃的代码
+
+```
+NSString *nilStr = nil;
+NSArray *array = @[@"chenfanfang", nilStr];
+```
+
+若没有AvoidCrash来防止崩溃，则会直接崩溃，如下图：
+![崩溃截图](https://upload-images.jianshu.io/upload_images/1594675-4abb204d9d7454bd.png)
+
+若有AvoidCrash来防止崩溃，则不会崩溃，并且会将原本会崩溃情况的详细信息打印出来，如下图：
+![防止崩溃效果](https://upload-images.jianshu.io/upload_images/1594675-8ae14bf8df0dd3dd.png)
+
 ### 使用方法
 
 在AppDelegate的didFinishLaunchingWithOptions方法中添加如下代码，让AvoidCrash生效
@@ -35,12 +50,12 @@
 //这句代码会让AvoidCrash生效，若没有如下代码，则AvoidCrash就不起作用
 [AvoidCrash becomeEffective];
 
-   /*
-    *  [AvoidCrash becomeEffective]，是全局生效。若你只需要部分生效，你可以单个进行处理，比如:
-    *  [NSArray avoidCrashExchangeMethod];
-    *  [NSMutableArray avoidCrashExchangeMethod];
-    *  .................
-    */
+/*
+ *  [AvoidCrash becomeEffective]，是全局生效。若你只需要部分生效，你可以单个进行处理，比如:
+ *  [NSArray avoidCrashExchangeMethod];
+ *  [NSMutableArray avoidCrashExchangeMethod];
+ *  .................
+ */
 ```
 
 若你想要获取崩溃日志的所有详细信息，只需添加通知的监听，监听的通知名为:AvoidCrashNotification
