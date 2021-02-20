@@ -31,7 +31,7 @@ end
 pod install
 ```
 
-国内用下面命令较快
+因为墙，国内建议下面命令：
 ```
 pod install --verbose --no-repo-update
 pod install --repo-update
