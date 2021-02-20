@@ -7,6 +7,31 @@
 [rvm官方](https://rvm.io/)  
 [iOS - rvm、Ruby环境CocoaPods安装使用及相关错误处理](http://www.jianshu.com/p/a7cbae01ad6c)  
 [Cocoapods 版本升级](http://www.jianshu.com/p/82a6d6c7b000)  
+[CocoaPods安装和使用](https://www.jianshu.com/p/c2f9491485ec)
+
+## cocoapods 创建
+
+**创建 podfile**
+```
+vi podfile
+```
+
+```
+target '项目名称' do
+platform:ios , '8.0'
+pod 'SDWebImage'                 
+end
+```
+
+```
+pod install
+```
+
+```
+pod install --verbose --no-repo-update
+pod install --repo-update
+```
+
 
 ## 命令
 
