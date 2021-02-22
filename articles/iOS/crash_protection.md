@@ -119,7 +119,7 @@ NSArray *array = @[@"chenfanfang", nilStr];
 + (void)reportError:(NSError *)error;
 ```
 
-** 配合AvoidCrash使用 **
+* 配合AvoidCrash使用 *
 
 配合上AvoidCrash，使用上报自定义异常方法，我们就既能避免崩溃，又能监听异常！
 
