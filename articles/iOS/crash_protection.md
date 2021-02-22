@@ -135,11 +135,11 @@ NSArray *array = @[@"chenfanfang", nilStr];
 
 #### 在Bugly中查看上报数据 
 
-先选择跟踪数据：
+先选择跟踪数据：  
 ![跟踪数据](https://upload-images.jianshu.io/upload_images/2525930-bced88f2ba3c1dde.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-在页面的下边找到crash_attach.log:
-![crash_attach.log](https://upload-images.jianshu.io/upload_images/2525930-425fc9185a2fe50e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+在页面的下边找到crash_attach.log:  
+![crash_attach.log](https://upload-images.jianshu.io/upload_images/2525930-425fc9185a2fe50e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
 
 点击进去就能找到我们上报的数据了。
 
