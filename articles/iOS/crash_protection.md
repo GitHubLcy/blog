@@ -135,10 +135,10 @@ NSArray *array = @[@"chenfanfang", nilStr];
 
 #### 在Bugly中查看上报数据 
 
-找到我们上报的错误，点击进去：
+找到我们上报的错误，点击：  
 ![上报的错误](https://upload-images.jianshu.io/upload_images/2525930-3e7ab4789730e259.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-选择跟踪数据：  
+进来以后，选择跟踪数据：  
 ![跟踪数据](https://upload-images.jianshu.io/upload_images/2525930-bced88f2ba3c1dde.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 在页面的下边找到crash_attach.log:  
