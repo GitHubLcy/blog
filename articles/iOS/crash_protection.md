@@ -88,14 +88,14 @@ NSArray *array = @[@"chenfanfang", nilStr];
 
 ### 源码分析
 
-先看 `+ (void)becomeEffective; `这个方法：
+先看 `+ (void)becomeEffective; `这个方法：  
 ···
 + (void)becomeEffective {
     [self effectiveIfDealWithNoneSel:NO]; 
 }
 ···
 
-`becomeEffective`中调用了`effectiveIfDealWithNoneSel`方法，看下方法实现：
+`becomeEffective`中调用了`effectiveIfDealWithNoneSel`方法，看下方法实现：  
 
 ```
 + (void)effectiveIfDealWithNoneSel:(BOOL)dealWithNoneSel {
@@ -119,7 +119,7 @@ NSArray *array = @[@"chenfanfang", nilStr];
 }
 ```
 
-先只看`[NSArray avoidCrashExchangeMethod]`，在`NSArray+AvoidCrash`中：
+先只看`[NSArray avoidCrashExchangeMethod]`，在`NSArray+AvoidCrash`中：  
 
 ```
 + (void)avoidCrashExchangeMethod {
@@ -137,7 +137,7 @@ NSArray *array = @[@"chenfanfang", nilStr];
 }
 ```
 
-上面用到的是方法交换，为了解决的是给数组赋值时空指针的问题，看下`AvoidCrashArrayWithObjects:count:`方法：
+上面用到的是方法交换，为了解决的是给数组赋值时空指针的问题，看下`AvoidCrashArrayWithObjects:count:`方法：  
 
 ```
 + (instancetype)AvoidCrashArrayWithObjects:(const id  _Nonnull __unsafe_unretained *)objects count:(NSUInteger)cnt {
