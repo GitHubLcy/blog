@@ -89,11 +89,12 @@ NSArray *array = @[@"chenfanfang", nilStr];
 ### 源码分析
 
 先看 `+ (void)becomeEffective; `这个方法：  
-···
+
+```
 + (void)becomeEffective {
     [self effectiveIfDealWithNoneSel:NO]; 
 }
-···
+```
 
 `becomeEffective`中调用了`effectiveIfDealWithNoneSel`方法，看下方法实现：  
 
