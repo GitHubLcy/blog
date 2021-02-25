@@ -1,5 +1,5 @@
 
-# Crash 防护
+# iOS Crash防护
 
 ## 相关文章
 
@@ -76,7 +76,6 @@ NSArray *array = @[@"chenfanfang", nilStr];
     NSLog(@"%@",note.userInfo);
 }
 ```
-
 
 下面通过打断点的形式来看下userInfo中的信息结构，看下包含了哪些信息  
 
