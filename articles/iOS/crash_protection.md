@@ -77,6 +77,19 @@ NSArray *array = @[@"chenfanfang", nilStr];
 }
 ```
 
+下面通过打断点的形式来看下userInfo中的信息结构，看下包含了哪些信息
+
+![userInfo信息结构.png](https://upload-images.jianshu.io/upload_images/2525930-4c7135634c96a5b9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+再看下控制台输出日志来看下userInfo中的包含了哪些信息
+
+![userInfo详细信息.png](https://upload-images.jianshu.io/upload_images/2525930-0d3ed90bdb53496c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)]
+
+
+
+
+
+
 ## 二、关于崩溃的统计
 
 这里用腾讯的Bugly进行介绍。
