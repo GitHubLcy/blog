@@ -83,7 +83,7 @@ NSArray *array = @[@"chenfanfang", nilStr];
 
 再看下控制台输出日志来看下userInfo中的包含了哪些信息
 
-![userInfo详细信息.png](https://upload-images.jianshu.io/upload_images/2525930-0d3ed90bdb53496c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)]
+![userInfo详细信息.png](https://upload-images.jianshu.io/upload_images/2525930-0d3ed90bdb53496c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 
