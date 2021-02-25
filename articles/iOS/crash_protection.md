@@ -86,7 +86,91 @@ NSArray *array = @[@"chenfanfang", nilStr];
 
 ![userInfo详细信息.png](https://upload-images.jianshu.io/upload_images/2525930-0d3ed90bdb53496c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+### 源码分析
 
+先看 `+ (void)becomeEffective; `这个方法：
+···
++ (void)becomeEffective {
+    [self effectiveIfDealWithNoneSel:NO]; 
+}
+···
+
+`becomeEffective`中调用了`effectiveIfDealWithNoneSel`方法，看下方法实现：
+
+```
++ (void)effectiveIfDealWithNoneSel:(BOOL)dealWithNoneSel {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        
+        [NSObject avoidCrashExchangeMethodIfDealWithNoneSel:dealWithNoneSel];
+        
+        [NSArray avoidCrashExchangeMethod];
+        [NSMutableArray avoidCrashExchangeMethod];
+        
+        [NSDictionary avoidCrashExchangeMethod];
+        [NSMutableDictionary avoidCrashExchangeMethod];
+        
+        [NSString avoidCrashExchangeMethod];
+        [NSMutableString avoidCrashExchangeMethod];
+        
+        [NSAttributedString avoidCrashExchangeMethod];
+        [NSMutableAttributedString avoidCrashExchangeMethod];
+    });
+}
+```
+
+先只看`[NSArray avoidCrashExchangeMethod]`，在`NSArray+AvoidCrash`中：
+
+```
++ (void)avoidCrashExchangeMethod {
+    
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        //=================
+        //   class method
+        //=================
+        
+        //instance array method exchange
+        [AvoidCrash exchangeClassMethod:[self class] method1Sel:@selector(arrayWithObjects:count:) method2Sel:@selector(AvoidCrashArrayWithObjects:count:)];
+        
+        //其他代码暂时先省略
+}
+```
+
+上面用到的是方法交换，为了解决的是给数组赋值时空指针的问题，看下`AvoidCrashArrayWithObjects:count:`方法：
+
+```
++ (instancetype)AvoidCrashArrayWithObjects:(const id  _Nonnull __unsafe_unretained *)objects count:(NSUInteger)cnt {
+    
+    id instance = nil;
+    
+    @try {
+        instance = [self AvoidCrashArrayWithObjects:objects count:cnt];
+    }
+    @catch (NSException *exception) {
+        
+        NSString *defaultToDo = @"AvoidCrash default is to remove nil object and instance a array.";
+        [AvoidCrash noteErrorWithException:exception defaultToDo:defaultToDo];
+        
+        //以下是对错误数据的处理，把为nil的数据去掉,然后初始化数组
+        NSInteger newObjsIndex = 0;
+        id  _Nonnull __unsafe_unretained newObjects[cnt];
+        
+        for (int i = 0; i < cnt; i++) {
+            if (objects[i] != nil) {
+                newObjects[newObjsIndex] = objects[i];
+                newObjsIndex++;
+            }
+        }
+        instance = [self AvoidCrashArrayWithObjects:newObjects count:newObjsIndex];
+    }
+    @finally {
+        return instance;
+    }
+}
+```
+    
+    
 
 ## 二、关于崩溃的统计
 
