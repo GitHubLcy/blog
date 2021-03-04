@@ -10,6 +10,8 @@
 
 ## 面试题
 
+[iOS 面试 完整版](https://www.jianshu.com/p/cab2799e8ad2)
+
 [让 BAT 的 offer 不再难拿](https://github.com/bestswifter/blog/blob/master/articles/bat-offer.md)  
 
 [2020年阿里、字节：一套高效的iOS面试题（一）](https://www.cnblogs.com/zbblog/articles/12419312.html)  
