@@ -9,12 +9,11 @@
 *   [https://www.objc.io/](https://www.objc.io/)
 *   [http://stackoverflow.com/](http://stackoverflow.com/)
 *   [http://www.cocoachina.com/](http://www.cocoachina.com/)
-*   HackerNews
 *   [https://www.dataquest.io](https://www.dataquest.io)   国外学习网站（荣雷）
 *   [www.jianshu.com](http://www.jianshu.com) 简书 [13391550973@163.com](mailto:13391550973@163.com) 
 *   资源下载网站：[http://www.pin5i.com/](http://www.pin5i.com/)
 *   快速查找网站：[http://s.giffox.com/](http://s.giffox.com/)
 *   视频教程：[http://www.ycku.com/](http://www.ycku.com/)（这个老师的个人网站）
-* https://flutter.io/ 
-* Hacker News：https://news.ycombinator.com
-* [C语言中文网](http://c.biancheng.net/)
+*   https://flutter.io/ 
+*   [Hacker News](https://news.ycombinator.com)
+*   [C语言中文网](http://c.biancheng.net/)
