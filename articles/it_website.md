@@ -18,3 +18,4 @@
 *   视频教程：[http://www.ycku.com/](http://www.ycku.com/)（这个老师的个人网站）
 * https://flutter.io/ 
 * Hacker News：https://news.ycombinator.com
+* [C语言中文网](http://c.biancheng.net/view/2035.html)
