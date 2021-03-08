@@ -14,7 +14,7 @@
 * 清除第一个元素          M.pop() 
 
 **初始化**  
-* queue<int> mQueue;
+* `queue<int> mQueue;`
 
 ## vector（容器）
 
