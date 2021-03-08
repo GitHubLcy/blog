@@ -5,7 +5,7 @@
 
 调用时需要导入头文件：#include <queue>  
   
-**用法**
+**用法**  
 * 查看是否为空范例         M.empty()    是的话返回1，不是返回0;
 * 从已有元素后面增加元素   M.push()
 * 输出现有元素的个数       M.size()
@@ -13,8 +13,8 @@
 * 显示最后一个元素        M.back()
 * 清除第一个元素          M.pop() 
 
-**初始化**
-queue<int> mQueue;
+**初始化**  
+* queue<int> mQueue;
 
 ## vector（容器）
 
