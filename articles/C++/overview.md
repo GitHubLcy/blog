@@ -22,6 +22,7 @@
 
 **相关链接**
 * [C++ vector 容器浅析](https://www.runoob.com/w3cnote/cpp-vector-container-analysis.html)
+* [C++ vector用法解析](https://zhuanlan.zhihu.com/p/130249122)
 
 **头文件**
 * `#include <vector> `
@@ -30,7 +31,22 @@
 * `vector<vector<int>> res;`
 
 **用法**  
-* void push_back(const T& x):向量尾部增加一个元素X
+* 在vector的末尾插入新元素  vec.push_back(1);
+* 删除最后一个元素          vec.pop_back();
+* 清除所有元素              vec.clear();
+* 判断该数组是否为空        vec.empty();
+* 遍历数组
+```
+//向数组一样利用下标进行访问
+vector<int> a;
+for(int i=0;i<a.size();i++){
+     cout<<a[i];
+}
 
-
+//利用迭代器进行访问
+vector<int>::iterator it;
+for(it=a.begin();it!=a.end();it++){
+   cout<<*it;
+}
+```
 
