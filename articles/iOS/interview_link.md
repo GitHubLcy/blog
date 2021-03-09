@@ -24,3 +24,5 @@
 
 [直击2020——iOS 面试题大全(补充完整版)](https://www.jianshu.com/p/25324d04797d)
 
+[2020年，精选大厂的iOS面试题总结（一）](https://www.jianshu.com/p/deeac4ab2742)
+
