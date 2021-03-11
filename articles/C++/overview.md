@@ -11,6 +11,13 @@
   '\f'    (0x0c)    feed (FF) 换页符
   '\r'    (0x0d)    carriage return (CR) 回车符
   ```
+  
+## strig（字符串）
+
+[C++ string类（C++字符串）完全攻略](http://c.biancheng.net/view/400.html)
+
+* `length` 返回字符串的长度
+* `str[index]` 获取index位置的字符
 
 ## queue（队列）
 
