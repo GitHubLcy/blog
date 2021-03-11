@@ -2,7 +2,7 @@
 
 * `isdigit(<#int _c#>)` 判断字符型是否是数字
 * `int isspace(int c) ` 检查所传的字符是否是空白字符。
-  * 标准的空白字符包括：
+  标准的空白字符包括：
   ```
   ' '     (0x20)    space (SPC) 空格符
   '\t'    (0x09)    horizontal tab (TAB) 水平制表符    
