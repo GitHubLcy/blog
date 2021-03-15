@@ -16,8 +16,19 @@
 
 [C++ string类（C++字符串）完全攻略](http://c.biancheng.net/view/400.html)
 
-* `length` 返回字符串的长度
+* `length()`/`size()` 返回字符串的长度
 * `str[index]` 获取index位置的字符
+* `reverse(s.begin(), s.end());` 翻转字符串
+* `s.begin()`  首字符
+* `s.end()`    尾字符
+
+**删除子串**
+erase 成员函数可以删除 string 对象中的子串，返回值为对象自身的引用。例如：
+```
+string s1("Real Steel");
+s1.erase(1, 3);  //删除子串(1, 3)，此后 s1 = "R Steel"
+s1.erase(5);  //删除下标5及其后面的所有字符，此后 s1 = "R Ste"
+```
 
 ## queue（队列）
 
