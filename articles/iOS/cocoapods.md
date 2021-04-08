@@ -41,7 +41,7 @@ pod install --repo-update
 ## 命令
 
 ### 切换源
-* 查看：gem sources -l
+* 查看源：gem sources -l
 * ruby源：https://gems.ruby-china.com/
 * ruby源：https://rubygems.org/
 * 淘宝源：https://ruby.taobao.org/
