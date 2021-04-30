@@ -12,3 +12,7 @@
 [Swift_ios_二进制，十进制，十六进制之间的转换](https://www.jianshu.com/p/34d5e958910a)
 
 [swift 数组 filter reduce sort 等方法](https://blog.csdn.net/github_36850997/article/details/94734742)
+
+[Swift5.1—可选类型](https://www.jianshu.com/p/79d627f58263)
+
+[swift 可选类型](https://www.jianshu.com/p/cc7083662723)
