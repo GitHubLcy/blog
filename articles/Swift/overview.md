@@ -16,3 +16,5 @@
 [Swift5.1—可选类型](https://www.jianshu.com/p/79d627f58263)
 
 [swift 可选类型](https://www.jianshu.com/p/cc7083662723)
+
+[SceneDelegate有什么作用？删除有什么影响](https://blog.csdn.net/potato512/article/details/106542809)
