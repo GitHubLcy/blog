@@ -4,8 +4,6 @@
 
 [牛人博客列表](http://m.blog.csdn.net/blog/rxjrenxiaojun/22406751)
 
-[me](http://blog.csdn.net/SpringSunLcy)  
-
 [MJ csdn](http://blog.csdn.net/q199109106q) ，
 [MJ 博客园](http://www.cnblogs.com/mjios)  
 
